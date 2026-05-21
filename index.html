@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人作品集 - 展示我的项目和技能">
+  <title>个人作品集</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#" class="logo" id="logo" data-i18n="nav.logo">我的作品集</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active" data-i18n="nav.home">首页</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">关于</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">项目</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">技能</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">联系</a></li>
+      </ul>
+      <button class="lang-toggle" id="langToggle" data-i18n="lang.btn">EN</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="切换菜单">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero 区域 -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1><span data-i18n="hero.greeting">你好，我是</span> <span class="highlight">张三</span></h1>
+          <p class="subtitle" data-i18n="hero.subtitle">Python Developer</p>
+          <p class="description" data-i18n="hero.description">擅长消息中间件、实时数据处理与高可用架构设计。</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-i18n="hero.cta_projects">查看作品</a>
+            <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta_contact">联系我</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="avatar-image">
+            <img src="https://kirineko.github.io/hita.png" alt="个人头像" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about.title">关于我</h2>
+
+        <!-- 简介 + 技能标签 -->
+        <div class="about-intro">
+          <p data-i18n="about.intro_p1">Python Developer，擅长消息中间件、实时数据处理、高可用架构设计。</p>
+          <p data-i18n="about.intro_p2">喜欢 Rust、幸运星、孤独摇滚、摇曳露营。</p>
+          <div class="skill-tags">
+            <span class="tag tag-proficient">Python</span>
+            <span class="tag tag-proficient">MongoDB</span>
+            <span class="tag tag-advanced">Next.js</span>
+            <span class="tag tag-advanced">ElasticSearch</span>
+            <span class="tag tag-beginner">Rust</span>
+          </div>
+        </div>
+
+        <!-- 专业经历时间线 -->
+        <div class="timeline-section">
+          <h3 class="about-subtitle" data-i18n="about.timeline_title">专业经历</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2021 – 2023</span>
+                <h4 data-i18n="timeline.1.title">软件工程师</h4>
+                <p data-i18n="timeline.1.org">OpenAI</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2017 – 2020</span>
+                <h4 data-i18n="timeline.2.title">软件工程师</h4>
+                <p data-i18n="timeline.2.org">Google</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2014 – 2016</span>
+                <h4 data-i18n="timeline.3.title">硕士 · 计算机科学</h4>
+                <p data-i18n="timeline.3.org">斯坦福大学</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2010 – 2014</span>
+                <h4 data-i18n="timeline.4.title">本科 · 计算机科学与技术</h4>
+                <p data-i18n="timeline.4.org">清华大学</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 个人成就 -->
+        <div class="achievements-section">
+          <h3 class="about-subtitle" data-i18n="about.achievements_title">个人成就</h3>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <span class="achievement-icon">🎓</span>
+              <h4 data-i18n="achievement.1.title">清华大学优秀毕业生</h4>
+              <p data-i18n="achievement.1.org">清华大学</p>
+            </div>
+            <div class="achievement-card">
+              <span class="achievement-icon">🏆</span>
+              <h4 data-i18n="achievement.2.title">微软 MVP</h4>
+              <p data-i18n="achievement.2.org">微软最有价值专家</p>
+            </div>
+            <div class="achievement-card">
+              <span class="achievement-icon">📜</span>
+              <h4 data-i18n="achievement.3.title">华为开发者认证</h4>
+              <p data-i18n="achievement.3.org">华为开发者专家认证</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title" data-i18n="projects.title">我的项目</h2>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- 项目卡片将由 JavaScript 动态生成 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title" data-i18n="skills.title">技能</h2>
+        <div class="skills-list" id="skillsList">
+          <!-- 技能条将由 JavaScript 动态生成 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact.title">联系我</h2>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name" data-i18n="contact.name_label">姓名</label>
+            <input type="text" id="name" name="name" required data-i18n-placeholder="contact.name_placeholder" placeholder="请输入姓名">
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="contact.email_label">邮箱</label>
+            <input type="email" id="email" name="email" required data-i18n-placeholder="contact.email_placeholder" placeholder="请输入邮箱">
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact.message_label">留言</label>
+            <textarea id="message" name="message" rows="5" required data-i18n-placeholder="contact.message_placeholder" placeholder="请输入留言内容"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="contact.submit">发送消息</button>
+        </form>
+        <div id="formFeedback" class="form-feedback"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer.copyright">© 2025 张三. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
